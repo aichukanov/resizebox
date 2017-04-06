@@ -1,0 +1,16 @@
+﻿
+.resize-box {
+    position: absolute;
+    color: black;
+    background-color: #cccccc;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    opacity: 0.9;
+    padding: 5px;
+    text-align: center;
+    z-index: 11;
+    pointer-events: none;
+    font-family: Verdana;
+    font-size: 11px;
+}
