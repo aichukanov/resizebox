@@ -1,0 +1,93 @@
+﻿.part {
+    display: block;
+    margin-bottom: 5px;
+    height: 500px;
+    /*display: flex;
+    flex-wrap: wrap;*/
+}
+
+.container {
+    text-align: left;
+    display: block;
+    vertical-align: top;
+    width: 100%;
+    min-width: 400px;
+    border: 1px solid #ddd;
+    min-height: 180px;
+    height: 50%;
+    position: relative;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/*.container {
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    max-width: 360px;
+    min-width: 350px;
+    min-height: 180px;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-grow: 2;
+    flex-basis: 100%;
+    box-sizing: border-box;
+}*/
+
+.container:after {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #999;
+}
+
+.container.code {
+    display: inline-block;
+    overflow-y: auto;
+    width: 50%;
+}
+
+/*.container.code {
+    overflow-y: auto;
+    flex-grow: 1;
+    flex-basis: 50%;
+    max-width: 350px;
+}*/
+
+.snap-container {
+    height: 20px;
+    width: 100%;
+    background-color: darkgrey;
+    margin-top: 25px;
+    position: absolute;
+}
+.snap-container:after {
+    display: block;
+    content: 'snap-container';
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.drag {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #ffffc8;
+    cursor: pointer;
+    position: absolute;
+}
+
+pre {
+    white-space: pre-wrap;
+    margin: 2px 5px;
+}
+        
+.drag.selected {
+    background-color: #b6f3b6;
+}

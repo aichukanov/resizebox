@@ -1,0 +1,12 @@
+﻿#c1:after {
+    content: 'Resize box';
+}
+
+    #c1 .drag {
+        cursor: auto;
+    }
+
+.custom-resize-box {
+    color: #ffffff;
+    background-color: #019c21;
+}
